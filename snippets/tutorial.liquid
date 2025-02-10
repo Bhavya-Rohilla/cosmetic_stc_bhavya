@@ -1,0 +1,72 @@
+{% comment %} {%- assign myVariable = "My name is bhavya" -%}
+{{ myVariable }} {% endcomment %}
+
+{% comment %}
+  This is a comment not rendered in the output
+{% endcomment %}
+
+{% comment %} {% assign myString = "This is a String" %}
+{{ myString }}
+<br />
+{% assign myNumber = 12345 %}
+{{ myNumber }}
+<br />
+{% assign myFloatingNumber = 10.566 %}
+{{ myFloatingNumber }}
+<br />
+{% assign myBoolean = true %}
+{{ myBoolean }}
+<br />
+{% assign myNil = null %}
+{{ myNil }}
+{% if myNil == null %}
+    <p>THIs is undefined</p>
+{% endif %}
+
+{% assign myArray = "1,2,3,4" %}
+{% assign temp = myArray | split: ',' %}
+{{ temp}}
+
+{{ product.tags }} {% endcomment %}
+
+{% comment %} {% for tag in product.tags %}
+    {{ tag }}
+    <br />
+{% endfor %}
+
+{{ product.title }}
+
+{% capture html %}
+  <div>
+        <p>Hello {{product.title}}</p>
+  </div>
+{% endcapture %}
+{{ html }} {% endcomment %}
+
+{% comment %} {% assign myValue = 10 %}
+
+{% if myValue > 10 %}
+    <p>Value is greater than 10</p>
+{% elsif myValue == 10 %}
+    <p>Value is equal to 10</p>
+{% else %}
+    <p>Value is less than 10</p>
+{% endif %} {% endcomment %}
+
+{% comment %} <p>Product Tags:</p>
+{% for tag in product.tags %}
+    <p>{{ tag }}</p>
+{% endfor %}
+
+<p>Checking for 'Loafers'...</p>
+
+{% unless product.tags contains "Lafers" %}
+    <p>This product is ATESBER</p>
+{% else %}
+    <p>"Loafers" tag found, so ATESBER will not show.</p>
+{% endunless %} {% endcomment %}
+
+
+{% for product in collection.products %}
+    <h3>{{ product.title }}</h3>
+{% endfor %}
