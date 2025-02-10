@@ -1,18 +1,30 @@
 <p>Hello From section figma</p>
 
+
+<h2>Text Setting</h2>
+<p>{{ section.settings.text_setting }}</p>
+
+
 {% schema %}
 {
-    "name" : "section figma 1",
-    "tag" : "section",
-    "class": "section-tutorial",
-    "limit": 2,
-    "settings": [],
-    "blocks": [],
-    "presets": [
-        {
-        "name" : "section figma 1",
-        "settings": {}
-        }
-]
+  "name": "section figma 1",
+  "tag": "section",
+  "class": "section-tutorial",
+  "limit": 2,
+  "blocks": [],
+  "settings":[ {
+        "type": "text",
+        "id": "text_setting",
+        "label": "Text Setting",
+        "default": "Change text please",
+        "info": "This is some helper text"
+      }],
+  "presets": [
+    {
+      "name": "section figma 1",
+      "settings":{}
+      
+    }
+  ]
 }
 {% endschema %}
