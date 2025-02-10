@@ -1,0 +1,437 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [],
+  "product": [
+    {
+      "key": "binding_mount",
+      "namespace": "test_data",
+      "name": "Snowboard binding mount",
+      "description": "The type of binding mount used on the snowboard",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "snowboard_length",
+      "namespace": "test_data",
+      "name": "Snowboard length",
+      "description": "The length of the snowboard",
+      "type": {
+        "name": "dimension",
+        "category": "MEASUREMENT"
+      }
+    },
+    {
+      "key": "short_description",
+      "namespace": "custom",
+      "name": "Short Description",
+      "description": "Short Description in PDP below Product Title",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_usp_image",
+      "namespace": "custom",
+      "name": "Product USP Image",
+      "description": "Image for USP | 90px x 90px",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_usp_title",
+      "namespace": "custom",
+      "name": "Product USP Title",
+      "description": "Title for Key Benifits | Text Length - 21",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "swatch_image",
+      "namespace": "custom",
+      "name": "Swatch Image",
+      "description": "Swatch Image PDP",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "swatch_name",
+      "namespace": "custom",
+      "name": "Swatch Name",
+      "description": "Swatch Name PDP",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "variants",
+      "namespace": "custom",
+      "name": "Variants",
+      "description": "Variants of a Product PDP For Swatches",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "color_swatch_image",
+      "namespace": "custom",
+      "name": "Color Swatch Image",
+      "description": "This is an image of the product's color swatch that will appear on the product card.",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "color_variants",
+      "namespace": "custom",
+      "name": "Color Variants",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "how_to_use",
+      "namespace": "custom",
+      "name": "How to Use",
+      "description": "How to Use? For Accordian",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "why_we_love_it",
+      "namespace": "custom",
+      "name": "Benefits",
+      "description": "Why we love it? For Accordian",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "ingredients",
+      "namespace": "custom",
+      "name": "Ingredients",
+      "description": "Ingredients For Accordia",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "about_this_product",
+      "namespace": "custom",
+      "name": "About this Product",
+      "description": "Details of the product",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_details",
+      "namespace": "custom",
+      "name": "Product Details",
+      "description": "Enter product details",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_key_feature_image",
+      "namespace": "custom",
+      "name": "Product Key Feature Image",
+      "description": "",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_key_feature_text",
+      "namespace": "custom",
+      "name": "Product Key Feature Text",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_faq_questions",
+      "namespace": "custom",
+      "name": "Product FAQ Questions",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_faq_answers",
+      "namespace": "custom",
+      "name": "Product FAQ Answers",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size",
+      "namespace": "custom",
+      "name": "Size",
+      "description": "Size filter",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product-form",
+      "namespace": "shopify",
+      "name": "Product form",
+      "description": "Defines the format or presentation of a product, typically for health and beauty; e.g. lotion, serum",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "package-type",
+      "namespace": "shopify",
+      "name": "Package type",
+      "description": "Defines the type of packaging for a product, e.g. jar, pump",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "suitable-for-skin-type",
+      "namespace": "shopify",
+      "name": "Suitable for skin type",
+      "description": "Specifies products for specific skin conditions, such as dry, aging, or sensitive",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skin-care-effect",
+      "namespace": "shopify",
+      "name": "Skin care effect",
+      "description": "Defines the intended benefits of skin care products, e.g. anti-aging, plumping",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "active-ingredient",
+      "namespace": "shopify",
+      "name": "Active ingredient",
+      "description": "Identifies primary substances in personal care items, e.g. vitamin A, retinol",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "item-condition",
+      "namespace": "shopify",
+      "name": "Item condition",
+      "description": "Indicates the quality of an item, typically vehicles or vehicle parts; e.g. certified pre-owned, refurbished",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fuel-supply",
+      "namespace": "shopify",
+      "name": "Fuel supply",
+      "description": "Specifies the fuel source for vehicles or engines, such as diesel or hybrid",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "transmission-type",
+      "namespace": "shopify",
+      "name": "Transmission type",
+      "description": "Identifies the type of transmission in vehicles or parts, like manual or automatic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "drive-type",
+      "namespace": "shopify",
+      "name": "Drive type",
+      "description": "Identifies the type of drive system in vehicles or heavy machinery, like 2WD or 4WD",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "oil",
+      "namespace": "custom",
+      "name": "Serum",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "ingredients1",
+      "namespace": "custom",
+      "name": "ingredients1",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "card-size",
+      "namespace": "shopify",
+      "name": "Card size",
+      "description": "Used to indicate the size of greeting or note cards, e.g. A4, letter",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "benefits",
+      "namespace": "custom",
+      "name": "Ingredients",
+      "description": "Define what product is made up of",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "cosmetic-function",
+      "namespace": "shopify",
+      "name": "Cosmetic function",
+      "description": "Defines the intended benefit or effect of a cosmetic product, e.g. soothing, healing",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "video",
+      "namespace": "custom",
+      "name": "video",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "variant": [],
+  "shop": [
+    {
+      "key": "alpine_sports",
+      "namespace": "test_data",
+      "name": "Alpine sport types",
+      "description": "The set of alpine sports that this sport shop specializes in",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ]
+}
