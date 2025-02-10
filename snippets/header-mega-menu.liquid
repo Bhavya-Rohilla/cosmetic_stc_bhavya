@@ -5,6 +5,12 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+<style>
+  .list-menu__item{
+  font-weight: 500;
+  }
+</style>
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}

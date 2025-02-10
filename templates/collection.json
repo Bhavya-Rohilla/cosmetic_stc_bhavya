@@ -22,7 +22,7 @@
         "text_raj44y": {
           "type": "text",
           "settings": {
-            "text": "It's not magic, it's <strong>clean beauty</strong>",
+            "text": "<span>It's not magic, it's</span> <strong>clean beauty</strong>",
             "text_style": "body"
           }
         },
