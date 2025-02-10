@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "LIFE CHAGING MASK",
             "heading_size": "h1"
           }
         },
@@ -49,7 +49,7 @@
       "settings": {
         "image": "shopify://shop_images/Rectangle_1693_d6ffe233-7ba0-44fb-a5fc-bcb93a2ee330.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
