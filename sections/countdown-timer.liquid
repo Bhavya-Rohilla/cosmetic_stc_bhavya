@@ -1,13 +1,4 @@
 <style>
-  h1 {
-    font-size: {{ section.settings.heading_font }}px;
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    margin: 0;
-    line-height: 1.2;
-  }
 
   #countdown-timer {
     width: 100%; /* Full width */
@@ -24,16 +15,7 @@
 </style>
 
 <body>
-  <h1 style="text-align: {{ section.settings.heading_alignment }};">
-    {{ section.settings.heading_text }}
-  </h1>
-  <p>{{ section.settings.paragraph_text }}</p>
-  
   <div id="countdown-timer"></div> <!-- Countdown Timer -->
-
-  {% if section.settings.size >= 9 %}
-    <p>Overflow</p>
-  {% endif %}
 </body>
 
 <script>
