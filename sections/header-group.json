@@ -11,6 +11,12 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "countdown_timer_BEUyVR": {
+      "type": "countdown-timer",
+      "settings": {
+        "countdown_minutes": 25
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -56,6 +62,7 @@
     }
   },
   "order": [
+    "countdown_timer_BEUyVR",
     "announcement-bar",
     "header"
   ]
