@@ -13,9 +13,7 @@
   "sections": {
     "countdown_timer_BEUyVR": {
       "type": "countdown-timer",
-      "settings": {
-        "countdown_minutes": 25
-      }
+      "settings": {}
     },
     "announcement-bar": {
       "type": "announcement-bar",
@@ -45,7 +43,7 @@
       "type": "header",
       "settings": {
         "logo_position": "top-center",
-        "menu": "main-menu",
+        "menu": "mega-menu-naman",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
