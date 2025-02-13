@@ -1,5 +1,4 @@
 <style>
-
   #countdown-timer {
     width: 100%; /* Full width */
     height: 30px; /* Fixed height */
@@ -11,29 +10,55 @@
     align-items: center;
     border-radius: 5px;
     font-weight: bold;
+    color: white;
   }
+
+  .countdown-text {
+    color: grey;
+  }
+
+  #timer{
+  color:black;
+}
 </style>
 
 <body>
-  <div id="countdown-timer"></div> <!-- Countdown Timer -->
+  <div id="countdown-timer">
+    <span class="countdown-text">{{ section.settings.text-settings }} </span> &nbsp; &nbsp; &nbsp;
+    <span id="timer"></span>
+  </div>
 </body>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     let countdownTime = 20 * 60; // 20 minutes in seconds
+
     function updateCountdown() {
       let minutes = Math.floor(countdownTime / 60);
       let seconds = countdownTime % 60;
-      document.getElementById("countdown-timer").textContent = 
-        minutes + "m " + (seconds < 10 ? "0" : "") + seconds + "s";
-      countdownTime--;
-
-      if (countdownTime >= 0) {
+      document.getElementById("timer").textContent = ` ${minutes} mins ${(seconds < 10 ? "0" : "") + seconds} sec`;
+      
+      if (countdownTime > 0) {
+        countdownTime--;
         setTimeout(updateCountdown, 1000);
       } else {
         document.getElementById("countdown-timer").textContent = "Time's Up!";
       }
     }
+    
     updateCountdown();
   });
 </script>
+
+{% schema %}
+{
+  "settings":[
+    {
+      "type": "text",
+      "id": "text-settings",
+      "label": "Title",
+      "default": "Score Big: It's Time to SHOP 'til you Drop!"
+    }
+  ]
+}
+{% endschema %}

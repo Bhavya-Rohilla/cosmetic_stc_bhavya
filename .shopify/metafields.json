@@ -8,7 +8,18 @@
   "location": [],
   "market": [],
   "order": [],
-  "page": [],
+  "page": [
+    {
+      "key": "faq",
+      "namespace": "custom",
+      "name": "FAQ",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "product": [
     {
       "key": "binding_mount",
@@ -417,6 +428,56 @@
       "description": "",
       "type": {
         "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product-certifications-standards",
+      "namespace": "shopify",
+      "name": "Product certifications & standards",
+      "description": "Indicates the certifications or standards a product meets, such as organic or cruelty free",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dispenser-type",
+      "namespace": "shopify",
+      "name": "Dispenser type",
+      "description": "Specifies the format for dispensing the product, typically in health and beauty; e.g. stick, jar",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skin-care-features",
+      "namespace": "shopify",
+      "name": "Skin care features",
+      "description": "Identifies the benefits of skin care items, such as long lasting or UVA/UVB protection",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "faqs",
+      "namespace": "custom",
+      "name": "FAQs",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_usp2",
+      "namespace": "custom",
+      "name": "product usp2",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
     }

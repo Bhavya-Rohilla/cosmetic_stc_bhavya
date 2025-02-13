@@ -9,6 +9,18 @@
   .list-menu__item{
   font-weight: 500;
   }
+
+  .bhavya{
+   
+  }
+
+  .my{
+  display: inline-block;
+  }
+
+  .abc{
+    width: 100%;
+}
 </style>
 
 <nav class="header__inline-menu">
@@ -33,11 +45,12 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup   bhavya"
                 tabindex="-1"
               >
+                <div class="abc">
                 <ul
-                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                  class="mega-menu__list my page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
                 >
                   {%- for childlink in link.links -%}
@@ -73,6 +86,7 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+              </div>
               </div>
             </details>
           </header-menu>
