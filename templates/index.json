@@ -120,14 +120,20 @@
       "type": "section-bhavya",
       "settings": {
         "text_setting": "hello world",
-        "text_TITLE": "Hello From customizer"
+        "text_TITLE": "Hello From customizer",
+        "textarea_setting": ""
       }
+    },
+    "meta_practice_RFMaMU": {
+      "type": "meta-practice",
+      "settings": {}
     }
   },
   "order": [
     "image_banner",
     "featured_collection_EBgKjq",
     "featured_collection",
-    "section_bhavya_zeQR4k"
+    "section_bhavya_zeQR4k",
+    "meta_practice_RFMaMU"
   ]
 }
