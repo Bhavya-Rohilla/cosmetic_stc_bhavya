@@ -2,8 +2,7 @@
   {%for item in shop.metaobjects.mutirow_info_product.values  %}
   <div>
   <h1>{{  item.sub_heading.value }}</h1>
-    <img src="{{ item.image.value 
-      | image_url: width: 200, height: 200}}">
+    <img src="{{ item.image.value | image_url: width: 200}}" height="200" alt="fgdsgv">
   </div>
   {% endfor %}
 
